@@ -1,0 +1,27 @@
+<mvc:View
+		controllerName="fish.foster.controller.FosterCalendar"
+		xmlns:l="sap.ui.layout"
+		xmlns:u="sap.ui.unified"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns="sap.m"
+		class="viewPadding">
+	<l:VerticalLayout>
+		<l:content>
+			<u:Calendar
+					id="calendar"
+					select="handleCalendarSelect"
+					intervalSelection="false"
+					singleSelection="false" />
+		      <u:CalendarLegend
+					id="legend" />            
+			<l:HorizontalLayout>
+				<Button
+						press="handleRemoveSelection"
+						text="Clear Dates" />				
+				<Button
+						press="handleSubmitSelection"
+						text="Submit" />                
+			</l:HorizontalLayout>
+        </l:content>
+	</l:VerticalLayout>
+</mvc:View>

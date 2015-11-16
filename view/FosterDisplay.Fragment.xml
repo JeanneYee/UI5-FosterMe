@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<TableSelectDialog 
+        class ="sapMListTblCell"
+		noDataText="No Info Found"
+		title="{DOG_NAME}"		
+		confirm="handleConfirm"
+		close="handleClose"
+        contentHeight = "100em"
+		items="{
+			path : '/DogCalendarAdmin'  }"                    
+>
+		<ColumnListItem>
+			<cells>
+				<ObjectIdentifier
+					text="{CAL_DATE}" />
+				<Text text="{FOSTER}" />	
+                <Text text="{STATUS}" class="greenText"/>		
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column width="12em">
+				<header>    
+					<Text text="Date" />
+				</header>
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true" >
+				<header>
+					<Text text="Foster" />
+				</header>
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true" >
+				<header>
+					<Text text="Status" />
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>

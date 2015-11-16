@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta charset="UTF-8">
+      <title>Animal Shelter - Foster Me!</title>
+       <script
+         id="sap-ui-bootstrap"
+         src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+         data-sap-ui-theme="sap_bluecrystal"
+         data-sap-ui-libs="sap.m,sap.ui.commons,sap.ui.table,sap.ui.unified,sap.ui.ux3"
+         data-sap-ui-compatVersion="edge"
+         data-sap-ui-preload="" 
+         data-sap-ui-bindingSyntax="complex"            
+         data-sap-ui-resourceroots='{
+            "fish.foster": "./"
+         }'>
+       </script>
+       <link rel="stylesheet" type="text/css" href="css/style.css" />       
+       <script>
+            var app = new sap.m.App({initialPage:"homepage"});
+           
+            var page = sap.ui.view({id:"homepage", viewName:"fish.foster.view.Home", type:sap.ui.core.mvc.ViewType.XML});
+            app.addPage(page);
+
+           var fosterpage = sap.ui.view({id:"fosterpage", viewName:"fish.foster.view.FosterMe", type:sap.ui.core.mvc.ViewType.XML});          
+           
+           var adminpage = sap.ui.view({id:"adminpage", viewName:"fish.foster.view.FosterDisplay", type:sap.ui.core.mvc.ViewType.XML});
+
+           var dashboardpage = sap.ui.view({id:"dashboardpage", viewName:"fish.foster.view.Graph", type:sap.ui.core.mvc.ViewType.XML});           
+
+           app.addPage(page).addPage(fosterpage);
+           app.addPage(page).addPage(adminpage);           
+           app.addPage(page).addPage(dashboardpage);
+           
+           app.placeAt("content");
+           
+//           sap.ui.getCore().attachInit(function(){
+//               new sap.m.Shell({
+//                   app : new sap.ui.core.ComponentContainer({
+//                       name : "fish.foster",
+//                       height : "100%"
+//                           })
+//                   }).placeAt("content");
+//           });
+       </script>
+   </head>
+   <body class="sapUiBody" id="content">
+        
+   </body>
+</html>

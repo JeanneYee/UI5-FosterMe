@@ -1,0 +1,37 @@
+.sapUiDemo .myCustomButton.sapMBtn {
+   margin-right: 0.125rem;
+}
+.sapUiDemo .myCustomText {
+   font-weight: bold;
+}
+.myFlexBox {
+    background-color: red;
+    color: green;
+}
+.tileStyle {  
+    text-align: bottom;  
+    font-weight: bold;
+     
+    }   
+.buttonStyle {  
+    text-align: bottom;  
+    font-weight: bold;
+    color: green;
+    }   
+
+.sapMListTblCell {
+    border-left: 1px solid #ccc;
+   
+}
+.headerImage {
+    vertical-align: bottom;
+}
+
+.greenText {
+    color:green;
+}
+
+.smallText{
+    font-size:1px;
+    color: red;
+}

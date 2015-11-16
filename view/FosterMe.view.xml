@@ -1,0 +1,86 @@
+<mvc:View
+	height="100%"
+	controllerName="fish.foster.controller.FosterMe"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+    xmlns:core="sap.ui.core" 
+    xmlns:my="fish.foster.controls">
+   <App class="sapUiDemo">
+      <pages>
+         
+         <Page>
+				<headerContent >
+                <Toolbar>
+                    <Text 
+                            text=" "
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />  
+                    <Text 
+                            text=" "
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              /> 
+                    <Button 
+                            text="ABOUT US"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "   
+                              />   
+                    <Button 
+                            text="FOSTER"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "    
+                            press = "goFoster"
+                              />   
+                    <Button 
+                            text="ADOPTION"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />  
+                    <Button 
+                            text="VOLUNTEER"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />                       
+                    <Button 
+                            text="WAY TO HELP"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />   
+                    <Button 
+                            text="CONTACT US"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />     
+                    <Button 
+                            text="DASHBOARD"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor " 
+                            press="goDashboard"
+                              />                      
+                    <Button 
+                            text="LOG IN"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "   
+                            press = "goLogin"
+                              />     
+                 
+			         <Image class ="headerImage" height="90%" src="./resource/logo.gif"  press="goHome"/>
+                 </Toolbar>
+				</headerContent>             
+		<TileContainer
+			id="container"
+			tileDelete="handleTileDelete"
+            tileAdd="handleTileAdd"                       
+			tiles=	"{
+			path : '/dogList'  }"      
+            >
+            <my:BackgroundTile class="tileStyle"   
+                info="{info}" 
+                press="onPress"
+                backgroundImage="{image}" 
+                ID="{ID}"
+                name="{info}"
+                />  
+		</TileContainer>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<ToolbarSpacer/>
+			</Toolbar>
+		</footer>
+         </Page>
+      </pages>
+   </App>                      
+</mvc:View>
+

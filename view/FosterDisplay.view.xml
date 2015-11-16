@@ -1,0 +1,83 @@
+<mvc:View
+	controllerName="fish.foster.controller.FosterDisplay"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+   <App class="sapUiDemo">
+      <pages>
+         
+         <Page>
+				<headerContent >
+                <Toolbar>
+                    <Text 
+                            text=" "
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />  
+                    <Text 
+                            text=" "
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              /> 
+                    <Button 
+                            text="ABOUT US"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "   
+                              />   
+                    <Button 
+                            text="FOSTER"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "    
+                            press = "goFoster"
+                              />   
+                    <Button 
+                            text="ADOPTION"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />  
+                    <Button 
+                            text="VOLUNTEER"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />                       
+                    <Button 
+                            text="WAY TO HELP"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />   
+                    <Button 
+                            text="CONTACT US"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />     
+                    <Button 
+                            text="DASHBOARD"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor " 
+                            press="goDashboard"
+                              />                      
+                    <Text 
+                            text="Hi Administrator!"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "                           
+                              />      
+                 
+			         <Image class ="headerImage" height="90%" src="./resource/logo.gif"  press="goHome"/>
+                 </Toolbar>
+				</headerContent>             
+            <content>       
+	<Table id="table1"
+        inset="false"
+           
+		>
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Foster Schedule - 2015 November" level="H2"/>
+			</Toolbar>
+		</headerToolbar>
+                     
+	</Table>   
+                <Text 
+                   text="X : Confirmed Foster"
+                   class ="sapUiSmallMargin sapThemeText-asColor "            
+                /> 
+                <Text 
+                   text="? : Pending Confirmation"
+                   class ="sapUiSmallMargin sapThemeFont -asColor "            
+                />    
+              
+            </content>
+         </Page>
+      </pages>
+   </App>                      
+</mvc:View>

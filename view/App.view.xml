@@ -1,0 +1,53 @@
+
+<mvc:View
+   controllerName="fish.foster.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+displayBlock="true">
+   <App class="sapUiDemo">
+      <pages>
+         
+         <Page>
+				<headerContent >
+                    <Text 
+                            text="ABOUT US"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />   
+                    <Text 
+                            text="FOSTER"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />   
+                    <Text 
+                            text="ADOPTION"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />  
+                    <Text 
+                            text="VOLUNTEER"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />                       
+                    <Text 
+                            text="WAY TO HELP"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />   
+                    <Text 
+                            text="EVENT"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />                      
+                    <Text 
+                            text="CONTACT US"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />                 
+                    <Text 
+                            text="LOG IN"
+                            class ="sapUiSmallMargin sapThemeHighlight-asColor "        
+                              />                       
+			         <Image height="90%" src="./resource/logo.gif" />
+				</headerContent>             
+            <content>    
+               <mvc:XMLView viewName="fish.foster.view.Home"/>   
+            </content>
+         </Page>
+      </pages>
+   </App>                      
+</mvc:View>
+
